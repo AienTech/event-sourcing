@@ -1,0 +1,8 @@
+import * as Mongoose from 'mongoose';
+import {{ pascalName }}Model from './graphql';
+
+const {{ pascalName }}Schema: Mongoose.Schema = new Mongoose.Schema(
+	{},
+	{ timestamps: true },
+);
+export default Mongoose.model<{{ pascalName }}Model>('{{ pascalName }}', {{ pascalName }}Schema);

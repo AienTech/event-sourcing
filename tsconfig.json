@@ -1,18 +1,34 @@
-{  
-  "compilerOptions": {  
-  "target": "es6",  
-    "module": "commonjs",  
-    "rootDir": "src",  
-    "outDir": "dist",  
-    "sourceMap": true,  
-    "resolveJsonModule": true,  
-    "lib": ["es6", "dom"],  
-    "esModuleInterop": true  
-  },  
-  "include": [  
-    "src/**/*.ts"  
-  ],  
-  "exclude": [  
-    "node_modules"  
-  ]  
-}  
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "incremental": true,
+    "esModuleInterop": true,
+    "inlineSourceMap": false,
+    "inlineSources": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
+}

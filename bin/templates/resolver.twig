@@ -1,0 +1,11 @@
+import { Query, Resolver } from 'type-graphql';
+import {{ pascalName }}Model from './graphql';
+import {{ pascalName }}Schema from './schema';
+
+@Resolver(() => {{ pascalName }}Model)
+export default class {{ pascalName }}Resolver {
+	@Query(() => [{{ pascalName }}Model])
+	async {{ camelName }}s(): Promise<{{ pascalName }}Model[]> {
+		return {{ pascalName }}Schema.find();
+	}
+}
